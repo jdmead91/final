@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regal Cinema</title>
+	<link href="layout.css" rel="stylesheet" />
+	<link href="stylesheet.css" rel="stylesheet" />
+	<link href="forms.css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="row">
+		<div class="col-1-1" ><img src="logo2.jpg" alt="Regal Cinema" id="logoimg" />
+	</div>	
+		<div class="row">
+		
+		
+				<a href="index.html" class="button"><div class="col-1-4 nav" link="index.html">Home</div></a>
+				<a href="concessions.html"><div class="col-1-4 nav">Concessions</div></a>
+				<a href="schedual.html"><div class="col-1-4 nav">Schedual</div></a>
+				<a href="tickets.html"><div class="col-1-4 nav">Tickets</div></a>
+		</div>	
+</div>
+<div class="row">
+	
+	<div class="col-4-1">
+	 <form action="http://www.regalcinemas.com" method="post">
+		
+		<fieldset>
+		<legend>Personal Information</legend>
+		<label for="fnBox">First Name</label> 
+		<input name="firstName" id="fnBox" type="text" placeholder="John" required />
+		
+		<label for="lnBox">Last Name</label> 
+		<input name="lastName" id="lnBox" type="text" placeholder="Smith" required />
+		
+		<label for="addBox">Street Address</label> 
+		<input name="address" id="addBox" type="text" placeholder="1234 1st steet" required></input> 
+		
+		<label for="city">City</label> 
+		<input name="city" id="city" type="text"placeholder="New York" required></input> 
+		
+		<label for="state">State</label> 
+		<input name="state" id="state" type="text" placeholder="NY" size="5" required></input> 
+		
+		<label for="zip">Zip code</label> 
+		<input name="zip" id="zip" type="text" placeholder="nnnnn" maxlength="5" size="5"required></input> 
+		</fieldset>
+		
+		
+		
+		<fieldset> 
+		<legend>Payment Information</legend>
+		<label for="cardType">Credit Card</label>
+		<select name="cardType" required>
+			<option value="amex">AMEX</option>
+			<option value="mastercard">Mastercard</option>
+			<option value="visa">Visa</option>
+			<option value="discover">Discover</option>	
+		</select>
+		
+		<label for="nameoncc">Cardholder Name</label> 
+			<input name="nameoncc" id="nameoncc" type="text" placeholder="First and Last Name" required />
+		
+		
+		<label for="ccnumber">Credit Card Number</label> 
+			<input name="ccnumber" id="ccnumber" type="password" placeholder="0000 0000 0000 0000" maxlegth="16" required />
+		
+		<label for="expiration">Expiration Date</label>
+		<select name="expiration" placeholder="month">
+			<option value"1">01 (January)</option>
+			<option value"2">02 (February)</option>
+			<option value"3">03 (March)</option>
+			<option value"4">04 (April)</option>
+			<option value"5">05 (May)</option>
+			<option value"6">06 (June)</option>
+			<option value"7">07 (July)</option>
+			<option value"8">08 (August)</option>
+			<option value"9">09 (September)</option>
+			<option value"10">10 (October)</option>
+			<option value"11">11 (November)</option>
+			<option value"12">12 (December)</option>
+		</select>
+		<select name="expiration">
+			<option value="2018">2018</option>
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+		
+		</select>
+	 </fieldset>
+	</div>		
+	
+	<div class="col-4-2">
+		
+		<fieldset>
+		<legend>Tickets and Comments</legend>
+		
+		
+		<label for="tickettype">Type of Tickets</label>
+		<select name="tickettype">
+			<option>Grand opening tickets $10</option>
+			<option>Evening Showings $7</option>
+			<option>Matinee Showings $4</option>
+		</select>
+		
+		<label for="numtickets">Number of Tickets</label>
+			<input name="numtickets" id="numtickets" type="number"
+					value="1" step="1" min="1" max="30" />
+		
+		<label>Mailing List</label>
+		<label for="cYes">Yes</label>
+			<input name="mailList" id="cYes" value="yes" type="radio" />
+		<label for="cNo">No</label>
+			<input name="mailList" id="cNo" value="no" type="radio" />
+			
+		<label for="comments">Comments:</label>
+		<textarea name="comments" id="comments" rows="5" cols="50"></textarea> 
+		
+		</fieldset>
+		<p><input type="submit" value="Submit" /></p>
+		
+		
+			</div>
+		</form>
+	</div>
+
+<div class="row">
+		<div class="col-1-6" >
+		<footer id="footer">&#169 Copyright 2018 <strong>Regal Cinema</strong> All Rights Reserved</footer>
+	
+		</div>	
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* Student: Joseph Mead */
+/* Date: 10/7/2018 */
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 5px;
+   width: 100px;
+   margin-left:15%;
+}
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+   
+}
+
+
+input[type='submit'] {
+   background-color: rgb(0, 128, 0);
+   border-radius: 20px;
+   margin-left: 30%;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+}
+legend {
+	background-color: rgb(255, 153, 51);
+	border-radius: 20px;
+	width:200px;
+	hight:150px;
+	text-align:center;
+	border-style: outset;
+	font-weight: bold;
+	
+}
+fieldset {
+	background-color: rgb(172, 115, 57) ;
+	border-radius: 15px;
+	padding: 5px;
+	border-style: outset;
+	
+}
+#comments {
+	margin-left: 10%;
+}
+	
